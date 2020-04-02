@@ -124,7 +124,7 @@ a:focus, a:hover, a:active {
 }
 
 button {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-family;
   text-decoration: none;
   cursor: pointer;
   user-select: none;
@@ -154,6 +154,7 @@ button {
 .mobile-header img {
   width: 8rem; }
 
+<<<<<<< HEAD
 @media screen and (min-width: 1000px) {
   .mobile-header {
     display: none; } }
@@ -166,6 +167,40 @@ button {
     display: none;
   }
 =======
+=======
+input[type=text] {
+  width: 100%;
+  padding: .5rem 1rem;
+  font-family: inherit;
+  font-size: .9rem;
+  color: #ccc;
+  background-color: $sidebar-bgcolor;
+  border-radius: .2rem;
+  border: 1px solid #666;
+  &::-ms-expand {
+    background-color: transparent;
+    border: 0;
+  }
+  &::placeholder {
+    color: #ababab;
+    // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+    opacity: 1;
+  }
+  &:focus {
+    &::-webkit-input-placeholder {
+      color: transparent;
+    }
+    &::-moz-input-placeholder {
+      color: transparent;
+    }
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}
+
+
+>>>>>>> style filter input, add clear filter button
 h1 {
   margin: 0 0 0 .6rem;
   padding-left: .6rem;
@@ -287,9 +322,7 @@ h1 {
   justify-content: center;
   width: 100%;
   color: #fff;
-  border-top-left-radius: .3rem;
-  border-top-right-radius: .3rem;
-  border-bottom: 1px solid #666;
+  border-radius: .3rem;
   transition: all .3s ease;
   cursor: pointer;
   &:focus, &:hover, &:active, &.is-active {
@@ -331,6 +364,32 @@ h1 {
   color: #ccc;
 }
 >>>>>>> left column for display WHO data and pan/zoom to location
+
+.location-filter-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 1rem 0;
+  border-bottom: 1px solid #666;
+}
+
+.clear-filter {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: .75rem;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  cursor: pointer;
+  transition: all .3s ease;
+  &:hover, &:focus {
+    transform: translateY(-50%) rotate(-90deg);
+  }
+  &.is-visible {
+    display: flex;
+  }
+}
 
 .location-list {
   flex: 1;
@@ -437,6 +496,9 @@ h1 {
   li {
     width: 100%;
     margin: .8rem 0;
+    &.is-hidden {
+      display: none;
+    }
   }
   button {
     display: flex;
