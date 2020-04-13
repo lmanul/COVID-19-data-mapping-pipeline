@@ -88,6 +88,8 @@ if has_analytics_code():
   print("Analytics code is already present, skipping that step.")
 else:
   insert_analytics_code()
+  print("You might want to remove the analytics code again "
+        "after deployment.")
 
 if not backup_current_version(target_path):
   print("I could not back up the current version, bailing out.")
