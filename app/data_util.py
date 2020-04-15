@@ -16,7 +16,6 @@ LOCATION_INFO_PATH = "location_info.data"
 
 # A map from the data file we expect to where we can fetch it.                           
 DATA_FILES = {
-  "dailies.geojson": "https://www.healthmap.org/covid-19/dailies.geojson",
   "who.json": "https://www.healthmap.org/covid-19/who.json",
   FULL_DATA_FILE: FULL_DATA_FILE_URL,
 }
@@ -62,9 +61,10 @@ def prepare_for_deployment():
   if not os.path.exists(DAILIES_DIR):
     os.mkdir(DAILIES_DIR)
   # Clean whatever is left over.
-  for daily in glob.glob("dailies/*.geojson"):
+  for daily in glob.glob("dailies/*.json"):
     os.remove(daily)
-  os.remove(LOCATION_INFO_PATH)
+  if os.path.exists(LOCATION_INFO_PATH):
+    os.remove(LOCATION_INFO_PATH)
   print("Generating location info data...")
   split.compile_location_info(FULL_DATA_FILE, LOCATION_INFO_PATH)
 
