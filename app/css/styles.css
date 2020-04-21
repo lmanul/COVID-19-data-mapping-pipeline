@@ -188,17 +188,13 @@ h1 {
   transition: all .3s ease; }
   .clear-filter:hover, .clear-filter:focus {
     transform: translateY(-50%) rotate(-90deg); }
-  .clear-filter.is-visible {
-    display: flex; }
 
 .location-list {
   flex: 1;
   overflow: auto; }
   .location-list li {
     width: 100%;
-    margin: .5rem 0; }
-    .location-list li.is-hidden {
-      display: none; }
+    margin: .5rem 0 !important; }
   .location-list button {
     display: flex;
     justify-content: space-between;
