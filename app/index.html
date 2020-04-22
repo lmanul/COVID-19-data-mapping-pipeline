@@ -10,9 +10,9 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css?c" />
 </head>
 <body>
-  <div class="modal-wrapper" id="modal-wrapper">
+  <div id="modal-wrapper">
     <div class="modal-backdrop"></div>
-    <div class="modal" id="modal"></div>
+    <div id="modal"></div>
   </div>
   <div class="page-wrapper">
     <div class="sidebar">
@@ -22,7 +22,7 @@
         <h1 class="sidebar-title">COVID-19</h1>
       </div>
       <div class="reported-cases" onClick="handleFlyTo(10, 0, 1)">
-        <div class="reported-cases-num" id="total-cases"></div>
+        <div id="total-cases"></div>
         <div class="reported-cases-subtext">
           <div class="reported-cases-label">Confirmed cases worldwide</div>
           <div class="last-updated-date">Updated <span id="last-updated-date"></span></div>
@@ -30,9 +30,9 @@
       </div>
       <div class="location-filter-wrapper">
         <input type="text" id="location-filter" name="location-filter" onkeyup="filterList()" placeholder="Filter country list" />
-        <div class="clear-filter" id="clear-filter" onClick="clearFilter()"><img src="img/close-icon.svg" width="12" height="12" alt="Clear" /></div>
+        <div id="clear-filter" onClick="clearFilter()"><img src="img/close-icon.svg" width="12" height="12" alt="Clear" /></div>
       </div>
-      <ul id="location-list" class="list-reset location-list"></ul>
+      <ul id="location-list" class="list-reset"></ul>
     </div>
     <div class="map-wrapper">
       <div class="credit">
@@ -46,34 +46,9 @@
         <img src="img/hm-logo-color-white-text.svg" alt="HealthMap" />
         <h1 class="mobile-title">COVID-19</h1>
       </div>
-      <div id="legend" class="legend">
+      <div id="legend">
         <div class="legend-header">Cases</div>
-        <ul class="list-reset">
-          <li>
-            <span class="circle" style="background-color: #EDF91C;"></span>
-            <span class="label"><span class="label-val">&gt;2000</span></span>
-          </li>
-          <li>
-            <span class="circle" style="background-color: #FB9533;"></span>
-            <span class="label"><span class="label-val">501–2000</span></span>
-          </li>
-          <li>
-            <span class="circle" style="background-color: #D34D60;"></span>
-            <span class="label"><span class="label-val">101–500</span></span>
-          </li>
-          <li>
-            <span class="circle" style="20px; background-color: #921694;"></span>
-            <span class="label"><span class="label-val">11–100</span></span>
-          </li>
-          <li>
-            <span class="circle" style="background-color: #67009E;"></span>
-            <span class="label"><span class="label-val">&lt;=10</span></span>
-          </li>
-          <li>
-            <span class="circle" style="background-color: cornflowerblue;"></span>
-            <span class="label"><span class="label-val">New</span></span>
-          </li>
-        </ul>
+        <ul class="list-reset"></ul>
       </div>
       <div id="range-slider" style="display: none;">
     	  <div id="spread"><img src="./img/play.svg" width="20" height="20" alt="Play" /><span class="spread-label">Play</span></div>
