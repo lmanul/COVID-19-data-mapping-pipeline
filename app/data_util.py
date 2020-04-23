@@ -7,10 +7,11 @@ import split
 
 # The file containing all the data we need, and where to get it.
 FULL_DATA_FILE = "full-data.json"
-FULL_DATA_FILE_URL = "https://www.dl.dropboxusercontent.com/s/t48xylj81vaw25g/full-data.json"
+FULL_DATA_TAR  = FULL_DATA_FILE.replace('.json', '.tar.gz')
+FULL_DATA_FILE_URL = 'https://dl.dropboxusercontent.com/s/33mixinoi076x9f/full-data.tar.gz?dl=0'
 
 # The directory where JSON files for daily data are expected to be.
-DAILIES_DIR = "dailies"  
+DAILIES_DIR = "dailies"
 
 LOCATION_INFO_PATH = "location_info.data"
 
@@ -18,13 +19,9 @@ self_dir = os.path.dirname(os.path.realpath(__file__))
 
 # Returns whether we were able to get the necessary data
 def retrieve_generable_data(out_dir, should_overwrite=False):
-  import get_WHO_data
   import scrape_total_count
 
   success = True
-  out_path = os.path.join(out_dir, "who.json")
-  if not os.path.exists(out_path) or should_overwrite:
-    success &= get_WHO_data.get_WHO(out_path)
   out_path = os.path.join(out_dir, "latestCounts.json")
   if not os.path.exists(out_path) or should_overwrite:
     success &= scrape_total_count.scrape_total_count(out_path)
@@ -38,7 +35,9 @@ def prepare_for_local_development():
   # Download the data if we don't yet have it.
   if not os.path.exists(FULL_DATA_FILE):
     print("We don't have '" + FULL_DATA_FILE + "', downloading it...")
-    os.system("curl '" + FULL_DATA_FILE_URL + "' > " + FULL_DATA_FILE)
+    os.system("curl '" + FULL_DATA_FILE_URL + "' > " + FULL_DATA_TAR)
+    os.system("tar -xzf " + FULL_DATA_TAR)
+
 
   retrieve_generable_data(self_dir, should_overwrite=False)
 
