@@ -151,7 +151,7 @@ h1 {
 .reported-cases-subtext {
   margin-left: 1rem; }
 
-.reported-cases-num {
+#total-cases {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -175,7 +175,7 @@ h1 {
   padding-bottom: .5rem;
   border-bottom: 1px solid #666; }
 
-.clear-filter {
+#clear-filter {
   display: none;
   position: absolute;
   top: 50%;
@@ -186,16 +186,16 @@ h1 {
   color: #333;
   cursor: pointer;
   transition: all .3s ease; }
-  .clear-filter:hover, .clear-filter:focus {
+  #clear-filter:hover, #clear-filter:focus {
     transform: translateY(-50%) rotate(-90deg); }
 
-.location-list {
+#location-list {
   flex: 1;
   overflow: auto; }
-  .location-list li {
+  #location-list li {
     width: 100%;
     margin: .5rem 0 !important; }
-  .location-list button {
+  #location-list button {
     display: flex;
     justify-content: space-between;
     padding: .75rem;
@@ -208,21 +208,21 @@ h1 {
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
     transition: all .3s ease;
     cursor: pointer; }
-    .location-list button:focus, .location-list button:hover, .location-list button:active, .location-list button.is-active {
+    #location-list button:focus, #location-list button:hover, #location-list button:active, #location-list button.is-active {
       background-color: #454545; }
-    .location-list button.is-active {
+    #location-list button.is-active {
       border-color: #67009E; }
-  .location-list .label {
+  #location-list .label {
     margin-right: 1rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
-  .location-list .num {
+  #location-list .num {
     display: flex;
     align-items: center;
     font-weight: normal;
     color: #ccc; }
-    .location-list .num:after {
+    #location-list .num:after {
       content: '';
       display: block;
       width: .5rem;
@@ -230,19 +230,19 @@ h1 {
       margin-left: .65rem;
       border-radius: 50%;
       border: 1px solid; }
-    .location-list .num.legend-group-10:after {
+    #location-list .num.legend-group-10:after {
       background-color: #67009E;
       border-color: #560085; }
-    .location-list .num.legend-group-100:after {
+    #location-list .num.legend-group-100:after {
       background-color: #921694;
       border-color: #7c137e; }
-    .location-list .num.legend-group-500:after {
+    #location-list .num.legend-group-500:after {
       background-color: #D34d60;
       border-color: #ce394e; }
-    .location-list .num.legend-group-2000:after {
+    #location-list .num.legend-group-2000:after {
       background-color: #FB9533;
       border-color: #fb881a; }
-    .location-list .num.legend-group-default:after {
+    #location-list .num.legend-group-default:after {
       background-color: #dfeb06;
       border-color: #d1dc06; }
 
@@ -259,7 +259,7 @@ h1 {
   height: 100%;
   z-index: 1; }
 
-.legend {
+#legend {
   position: absolute;
   top: 0;
   right: 0;
@@ -267,26 +267,25 @@ h1 {
   background-color: rgba(70, 70, 70, 0.8);
   border-bottom-left-radius: 0.2rem;
   z-index: 4; }
-  .legend ul {
+  #legend ul {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .legend ul li {
+    #legend ul li {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-bottom: .5rem; }
-    .legend ul .circle {
+    #legend ul .circle {
       display: block;
       opacity: .85;
       width: .8rem;
       height: .8rem;
       border-radius: 50%; }
-    .legend ul .label {
-      line-height: 1; }
-    .legend ul .label-val {
+    #legend ul .label {
       font-size: .6rem;
       line-height: 1;
+      margin-top: 3px;
       color: #fff; }
 
 .legend-header {
@@ -340,24 +339,20 @@ h1 {
   display: none; }
 
 /* modal */
-.modal-wrapper {
+#modal-wrapper {
   display: none;
   position: relative;
   opacity: 0;
-  -webkit-transition: opacity 400ms ease;
-  -moz-transition: opacity 400ms ease;
-  -o-transition: opacity 400ms ease;
-  -ms-transition: opacity 400ms ease;
   transition: opacity 400ms ease;
   z-index: 15; }
 
-.modal-wrapper.is-block {
+#modal-wrapper.is-block {
   display: block; }
 
-.modal-wrapper.is-visible {
+#modal-wrapper.is-visible {
   opacity: 1; }
 
-.modal {
+#modal {
   display: none;
   flex-direction: column;
   position: fixed;
@@ -370,10 +365,10 @@ h1 {
   z-index: 17;
   user-select: none; }
 
-.modal.is-flex {
+#modal.is-flex {
   display: flex; }
 
-.modal.is-visible {
+#modal.is-visible {
   opacity: 1;
   margin-top: 0; }
 
@@ -643,7 +638,7 @@ input[type=range]::-ms-tooltip {
   .reported-cases-subtext {
     margin-left: 0; }
 
-  .reported-cases-num {
+  #total-cases {
     width: 100%;
     margin-bottom: .4rem;
     font-size: 1.3rem; }
@@ -652,7 +647,7 @@ input[type=range]::-ms-tooltip {
     margin-bottom: .1rem;
     font-size: .7rem; }
 
-  .location-list button {
+  #location-list button {
     font-size: .8rem;
     padding: .5rem .75rem; }
 
@@ -694,13 +689,13 @@ input[type=range]::-ms-tooltip {
   .reported-cases {
     padding: .5rem 1.25rem 1.25rem 1.25rem; }
 
-  .reported-cases-num {
+  #total-cases {
     font-size: 2rem; }
 
   .reported-cases-label {
     font-size: .9rem; }
 
-  .location-list button {
+  #location-list button {
     font-size: .9rem;
     padding: .75rem; }
 
@@ -724,7 +719,7 @@ input[type=range]::-ms-tooltip {
   .mapboxgl-ctrl-bottom-left {
     margin-left: 21rem; }
 
-  .legend {
+  #legend {
     top: 1rem;
     right: 1rem;
     border-radius: 0.2rem; }
@@ -741,7 +736,7 @@ input[type=range]::-ms-tooltip {
   .mapboxgl-ctrl-top-right, .credit-text {
     display: none; } }
 @media only screen and (min-width: 569px) and (min-height: 415px) {
-  .modal {
+  #modal {
     top: 50%;
     left: 50%;
     bottom: auto;
@@ -751,13 +746,7 @@ input[type=range]::-ms-tooltip {
     transform: translate(-50%, -50%);
     border-radius: .3rem;
     opacity: 0;
-    -moz-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.1);
-    -webkit-transition: all 400ms ease;
-    -moz-transition: all 400ms ease;
-    -o-transition: all 400ms ease;
-    -ms-transition: all 400ms ease;
     transition: all 400ms ease; } }
 @media only screen and (min-width: 569px) {
   .modal-title {
