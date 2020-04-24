@@ -31,6 +31,7 @@ EXCLUDED = [
   "data_util.py",
   "deploy",
   "full-data.json",
+  "full-data.tar.gz",
   "prerequisites.md",
   "run",
 ]
