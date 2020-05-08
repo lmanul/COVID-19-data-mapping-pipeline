@@ -4,36 +4,28 @@
   <title>Novel Coronavirus (COVID-19)</title>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.7.2/bluebird.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/fonts.css" />
   <link rel="stylesheet" type="text/css" href="css/styles.css?c" />
 </head>
 <body>
-  <div class="modal-wrapper" id="modal-wrapper">
+  <div id="modal-wrapper">
     <div class="modal-backdrop"></div>
-    <div class="modal" id="modal">
-      <div class="modal-header">
-        <div class="modal-title">About this Map</div>
-        <div class="modal-cancel" onClick=handleHideModal()><img src="img/close-icon.svg" width="20" height="20" alt="Close" /></div>
+    <div id="modal"></div>
+  </div>
+  <div class="page-wrapper">
+    <div class="sidebar">
+      <div class="pullbar"></div>
+      <div class="sidebar-header">
+        <img src="img/hm-logo-color-white-text.svg" alt="HealthMap" />
+        <h1 class="sidebar-title">COVID-19</h1>
       </div>
-      <div class="modal-body">
-        <p>The Covid-19 map visualizes a deep and meticulous dataset that is freely accessible to anyone involved in coronavirus research; something that represents a completely new approach to how we collect data and make it readily available during an outbreak. The data changes the game in terms of how we respond to new global threats such as these.</p>
-        <h2>Data</h2>
-    	  <p>All data used to produce this map are exclusively collected from publicly available sources including government reports and news media.</p>
-        <p>Datasets and resources can be found in <a href="https://github.com/beoutbreakprepared/nCoV2019" target="new">GitHub</a>.</p>
-
-        <h2>Participating Institutions</h2>
-        <div class="logos">
-          <img src="img/oxford-blue.svg" class="oxford-logo" alt="University of Oxford" />
-          <img src="img/hm-logo-color.svg" class="hm-logo" alt="HealthMap" />
-          <img src="img/harvard-logo-color.svg" class="hms-logo" alt="Harvard Medical School" />
-          <img src="img/BCH_Primary_Logo.svg" class="bch-logo" alt="Boston Children's Hospital" />
-          <img src="img/netsi.png" class="netsi-logo" alt="Network Science Institute at Northeastern University" />
-          <img src="img/Oxford_Martin_School_Logo_color.png" class="oxford-martin-logo" alt="Oxford Martin School" />
-          <img src="img/Tsinghua_University.png" class="tsinghua-logo" alt="Tsinghua University" />
-          <img src="img/IHME_logo_acr_color_large.png" class="ihme-logo" alt="Institute for Health Metrics and Evaluation" />
+      <div class="reported-cases" onClick="handleFlyTo(10, 0, 1)">
+        <div id="total-cases"></div>
+        <div class="reported-cases-subtext">
+          <div class="reported-cases-label">Confirmed cases worldwide</div>
+          <div class="last-updated-date">Updated <span id="last-updated-date"></span></div>
         </div>
+<<<<<<< HEAD
 
         <h2>Collaborators</h2>
         <ul>
@@ -410,6 +402,48 @@
   </script>
   <script async defer src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js" onload="initMap()"></script>
   <link href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css" rel="stylesheet" />
+=======
+      </div>
+      <div class="location-filter-wrapper">
+        <input type="text" id="location-filter" name="location-filter" onkeyup="filterList()" placeholder="Filter country list" />
+        <div id="clear-filter" onClick="clearFilter()"><img src="img/close-icon.svg" width="12" height="12" alt="Clear" /></div>
+      </div>
+      <ul id="location-list" class="list-reset"></ul>
+    </div>
+    <div class="map-wrapper">
+      <div class="credit">
+        <span class="credit-text">In collaboration with the Open COVID-19 Data Curation Group</span>
+        <span class="credit-links">
+          <a href="https://github.com/beoutbreakprepared/nCoV2019/tree/master/latest_data" target="new">COVID-19 Dataset</a>
+          <a href="#" onClick="fetchAboutPage()">About</a>
+        </span>
+      </div>
+      <div class="mobile-header">
+        <img src="img/hm-logo-color-white-text.svg" alt="HealthMap" />
+        <h1 class="mobile-title">COVID-19</h1>
+      </div>
+      <div id="legend">
+        <div class="legend-header">Cases</div>
+        <ul class="list-reset"></ul>
+      </div>
+      <div id="range-slider" style="display: none;">
+    	  <div id="spread"><img src="./img/play.svg" width="20" height="20" alt="Play" /><span class="spread-label">Play</span></div>
+        <input id="slider" type="range" value="1000" min="0" max="1000" step="1" />
+        <label><span id="date"></span></label>
+      </div>
+      <div id="map"></div>
+    </div>
+  </div>
+  <!-- js -->
+  <script src="js/healthmap.js"></script>
+  <!-- /js -->
+  <script async defer
+          src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"
+          onload="initMap()"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css"
+        rel="stylesheet" />
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+>>>>>>> upstream/master
 
 </body>
 </html>

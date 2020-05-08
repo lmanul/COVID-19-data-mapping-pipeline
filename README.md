@@ -7,6 +7,13 @@ application locally:
 
 `./run`
 
+<<<<<<< HEAD
+=======
+Before deploying, commit your changes or sending a pull request, please run the tests:
+
+`./test`
+
+>>>>>>> upstream/master
 For deployment in a server environment:
 
 `./deploy path/to/target`
