@@ -42,7 +42,7 @@ let countryFeaturesByDay = {};
 let provinceFeaturesByDay = {};
 let atomicFeaturesByDay = {};
 
-let timeControl = document.getElementById('slider');
+let timeControl;
 
 function onMapZoomChanged() {
   showDataAtDate(currentIsoDate);
@@ -57,12 +57,13 @@ function showDataAtDate(isodate) {
   // Show per-country data for low zoom levels, but only for the most recent
   // date.
   if (zoom <= ZOOM_THRESHOLD && currentIsoDate == dates[dates.length - 1]) {
-    for (let country in latestDataPerCountry) {
-      let countryData = latestDataPerCountry[country];
+    for (let centroid_geoid in latestDataPerCountry) {
+      let countryData = latestDataPerCountry[centroid_geoid];
+      let country = countryData[0];
       let feature = formatFeatureForMap({
         'properties': {
-          'geoid': countryData[0] + '|' + countryData[1],
-          'total': countryData[2],
+          'geoid': centroid_geoid,
+          'total': countryData[1],
           'new': 0
         }
       });
@@ -221,43 +222,8 @@ function formatFeatureForMap(feature) {
   return feature;
 }
 
-function fetchWhoData() {
-  const params = {
-    'where': '1=1',
-    'geometryType': 'esriGeometryEnvelope',
-    'spatialRel': 'esriSpatialRelIntersects',
-    'units': 'esriSRUnit_Meter',
-    'returnGeodetic': 'true',
-    'outFields': 'cum_conf%2C+ADM0_NAME',
-    'returnGeometry': 'false',
-    'returnCentroid': 'true',
-    'featureEncoding': 'esriDefault',
-    'multipatchOption': 'xyFootprint',
-    'applyVCSProjection': 'false',
-    'returnIdsOnly': 'false',
-    'returnUniqueIdsOnly': 'false',
-    'returnCountOnly': 'false',
-    'returnExtentOnly': 'false',
-    'returnQueryGeometry': 'false',
-    'returnDistinctValues': 'false',
-    'cacheHint': 'false',
-    'returnZ': 'false',
-    'returnM': 'false',
-    'returnExceededLimitFeatures': 'true',
-    'f': 'pjson'
-  }
-  const token = '5T5nSi527N4F7luB';
-  let paramArray = [];
-  for (let p in params) {
-    paramArray.push(p + '=' + params[p]);
-  }
-  const url = 'https://services.arcgis.com/' +
-      token + '/' +
-      'ArcGIS/rest/services/COVID_19_CasesByCountry(pl)_VIEW/' +
-      'FeatureServer/0/query?' +
-      paramArray.join('&');
-
-  return fetch(url)
+function fetchJhuData() {
+  return fetch('jhu.json?nocache=' + timestamp)
     .then(function(response) { return response.json(); })
     .then(function(jsonData) {
       let obj = jsonData['features'];
@@ -276,9 +242,12 @@ function fetchWhoData() {
         let lon = location['centroid']['x'] || 0;
         let lat = location['centroid']['y'] || 0;
         const geoid = '' + lat + '|' + lon;
-        let cumConf = location['attributes']['cum_conf'] || 0;
+        // The total count comes down as a formatted string.
+        let cumConf = parseInt(
+            location['attributes']['cum_conf'].replace(/,/g, ''),
+            10) || 0;
         let legendGroup = 'default';
-        latestDataPerCountry[name] = [lat, lon, cumConf];
+        latestDataPerCountry[geoid] = [name, cumConf];
         // No city or province, just the country name.
         locationInfo[geoid] = ',,' + name;
         if (cumConf <= 10) {
@@ -528,19 +497,30 @@ function showPopupForEvent(e) {
   let coordinatesString = geo_id.split('|');
   let lat = parseFloat(coordinatesString[0]);
   let lng = parseFloat(coordinatesString[1]);
-  // Country, province, city
-  let location = locationInfo[geo_id].split(',');
-  // Replace country code with name if necessary
-  if (location[2].length == 2) {
-    location[2] = countryNames[location[2]];
+
+  let locationString = '';
+  let totalCaseCount = 0;
+  if (map.getZoom() > ZOOM_THRESHOLD) {
+    // Country, province, city
+    let location = locationInfo[geo_id].split(',');
+    // Replace country code with name if necessary
+    if (location[2].length == 2) {
+      location[2] = countryNames[location[2]];
+    }
+    // Remove empty strings
+    location = location.filter(function (el) { return el != ''; });
+    locationString = location.join(', ');
+    totalCaseCount = props['total'];
+  } else {
+    let countryData = latestDataPerCountry[geo_id];
+    locationString = countryData[0];
+    totalCaseCount = countryData[1];
   }
-  // Remove empty strings
-  location = location.filter(function (el) { return el != ''; });
 
   let content = document.createElement('div');
-  content.innerHTML = '<h3 class="popup-header">' + location.join(', ') +
+  content.innerHTML = '<h3 class="popup-header">' + locationString +
       '</h3>' + '<div>' + '<strong>Number of Cases: </strong>' +
-      props['total'].toLocaleString() + '</div>';
+      totalCaseCount.toLocaleString() + '</div>';
 
   // Only show case graphs for atomic locations.
   if (map.getZoom() > ZOOM_THRESHOLD) {
@@ -583,6 +563,7 @@ function initMap() {
     'closeOnClick': false
   });
 
+  timeControl = document.getElementById('slider');
   timeControl.addEventListener('input', function() {
     setTimeControlLabel(timeControl.value);
     showDataAtDate(dates[timeControl.value]);
@@ -627,7 +608,7 @@ function initMap() {
       fetchCountryNames(),
       fetchDataIndex(),
       fetchLocationData(),
-      fetchWhoData()
+      fetchJhuData()
     ]).then(onBasicDataFetched);
 
     showLegend();
@@ -638,7 +619,10 @@ function initMap() {
 }
 
 // Exports
-window['clearFilter'] = clearFilter;
-window['filterList'] = filterList;
-window['initMap'] = initMap;
-window['handleFlyTo'] = handleFlyTo;
+if (typeof(globalThis) === 'undefined') {
+    globalThis = global;
+}
+globalThis['clearFilter'] = clearFilter;
+globalThis['filterList'] = filterList;
+globalThis['initMap'] = initMap;
+globalThis['handleFlyTo'] = handleFlyTo;

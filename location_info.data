@@ -1519,12 +1519,30 @@
 -1.2833|36.8167:,Nairobi County,KE
 -1.8401|36.7936:,Kajiado,KE
 -4.028|39.6331:,Mombasa or Nairobi,KE
+-8.8157|13.2329:Luanda,,AO
+11.4922|-3.521:HoundÈ,,BF
+11.1699|-4.2975:Bobo-Dioulasso,,BF
+11.7492|-2.9306:Boromo,,BF
+12.4614|-3.467:DÈdougou,,BF
+12.2825|-1.7423:,,BF
 9.03|38.74:Addis Ababa,Addis Ababa,ET
+16.1763|-22.9172:Boa Vista,,CV
+14.9155|-23.5094:Praia,,CV
 11.3333|36.75:Addis Kidame,Amhara,ET
+5.7121|12.7445:,,CM
 11.6|37.3833:Bahirdar,Amhara,ET
+4.0478|9.695:Douala,,CM
+5.4793|10.4147:Bafoussam,,CM
+4.3967|18.5586:Bangui,,CF
+6.5827|20.489:,,CF
 -22.2558|17.2279:,,NA
+15.4739|18.6714:,,TD
+5.3269|-4.0217:Abidjan,,CI
+7.6334|-5.5546:,,CI
 -26.0|28.0:,Gauteng,ZA
 -34.0|20.0:,Western Cape,ZA
+1.7684|29.4446:Nyakunde, Ituri,,CD
+11.7429|42.5719:,,DJ
 -26.0|30.0:,Mpumalanga,ZA
 -24.0|29.0:,Limpopo,ZA
 35.4|0.1333:Mascara,Mascara,DZ
@@ -1535,10 +1553,103 @@
 36.7539|3.0589:Algiers,Algiers,DZ
 -30.0|22.0:,Northern Cape,ZA
 -27.0|26.0:,North West,ZA
+3.7561|8.7795:Malabo,,GQ
+1.8621|9.7605:Bata,,GQ
+15.2934|38.9045:Asmara International Airport,,ER
+15.3919|38.8516:,,ER
+-26.5675|31.4982:,,SZ
+8.9102|38.6194:Sebeta,Oromia,ET
+9.35|42.8:JigJiga,Somali,ET
+8.6827|40.7793:West Hararge,Oromia,ET
+11.589|37.3915:Bahir Dar,Amhara,ET
+7.804|38.2881:Silti,SNNPR,ET
+12.0351|40.7642:Afar,Afar,ET
+9.5099|35.497:Batu,Oromia,ET
 36.7167|4.05:Tizi Ouzou,Tizi Ouzou,DZ
+-1.9543|10.9772:Akanda,,GA
+0.3932|9.4463:Libreville,,GA
+0.4167|9.4333:Louis,,GA
+12.0155|-14.9821:,,GW
+9.512|-13.7054:Conakry,,GN
+10.4429|-10.9401:,,GN
+-4.1754|39.4526:,Kwale County,KE
+-2.1875|38.1562:,Tanga,KE
+1.752|40.0491:,Wajir,KE
+-1.3657|38.0117:,Kitui,KE
+-1.0517|34.4758:,Migori County,KE
+-1.2667|36.85:,Eastleigh,KE
+-1.2888|36.7517:,Kawangware,KE
+0.5617|34.5616:,Bungoma,KE
+6.5|-10.5:Cabral Estate, Central Monrovia District, Montserrado County,,LR
+6.2693|-10.7337:Congo Town, Monrovia,,LR
+6.2881|-10.7675:Sinkor, Monrovia,,LR
+-19.4721|46.6794:,,MG
+12.6504|-8.0:Bameko,,ML
+14.4412|-11.4362:Kayes,,ML
+17.4566|-3.4987:,,ML
+15.1193|-10.5775:Yelimane,,ML
+26.779|84.7747:Commune II, district of Bamako,,ML
+18.0919|-15.9725:Nouakchott,,MR
+-20.1288|57.8953:,,MU
+-20.5186|57.5219:Candos (residence), Souillac (isolated),,MU
+-17.4013|35.5159:,,MZ
+-25.9745|32.5732:Maputo,,MZ
+6.455|3.3841:,Lagos,NG
+8.0|4.0:,Oyo,NG
+7.0|3.5833:,Ogun,NG
+9.0667|7.4833:,Abuja,NG
+12.0001|8.5167:,Kano,NG
+11.8905|13.1477:,Borno,NG
+12.9913|7.6:,Katsina,NG
+4.75|6.8333:,Rivers,NG
+10.5|10.0:,Bauchi,NG
+5.712|5.9465:,Delta,NG
+6.5|6.0:,Edo,NG
+8.5|5.0:,Kwara,NG
+9.3243|12.4015:,Adamawa,NG
 -28.9972|25.085:,UNK,ZA
+10.2932|11.1675:,Gombe,NG
+5.0|7.8333:,Akwa Ibom,NG
+9.2309|9.5091:,Plateau,NG
+12.0947|6.2466:,Zamfara,NG
+10.5167|7.4333:,Kaduna,NG
+13.0609|5.239:,Sokoto,NG
+7.1667|5.0833:,Ondo,NG
+7.5|4.5:,Osun,NG
+7.6667|5.25:,Ekiti,NG
+5.5721|7.0588:,Imo,NG
+8.0194|10.7764:,Taraba,NG
+4.8011|5.8335:,Bayelsa,NG
+6.3301|8.1056:,Ebonyi,NG
+11.7802|4.5093:,Kebbi,NG
+12.2409|9.5663:,Jigawa,NG
 36.45|7.4333:Guelma,Guelma,DZ
+6.5|7.5:,Enugu,NG
+12.0083|8.5729:,Nasarawa,NG
+12.3004|11.4304:,Yobe,NG
+-0.8218|15.2353:Arusha city,,CG
+0.5476|29.3231:Home confinement,,CG
+14.6524|-16.2289:Diourbel,,SN
+14.6693|-17.4366:Dakar,,SN
+14.7773|-16.9399:Thies,,SN
+14.422|-16.9637:Mbour,,SN
+14.3676|-14.4724:,,SN
+16.0254|-16.5039:Saint-Louis,,SN
+12.5812|-16.2637:Ziguinchor,,SN
+-4.6064|55.4636:Perseverance,,SC
+-6.7884|51.7336:,,SC
+2.0381|45.3416:Mogadishu,,SO
 27.8667|-0.2833:Adrar,Adrar,DZ
+15.5518|32.5324:Khartoum,,SD
+-3.3698|36.6871:Arusha,,TZ
+-6.815|39.2867:Dar es Salaam,,TZ
+-6.1768|39.224:Zanzibar,,TZ
+6.1397|1.2296:Lome,,TG
+8.5374|0.9761:,,TG
+0.0195|32.4412:Entebbe,,UG
+1.2815|32.3913:,,UG
+-15.4256|28.2787:Lusaka,,ZM
+-13.2598|28.4062:Copperbelt, Masaiti Hospital in Ndola,,ZM
 -32.9068|17.9958:,North Western,ZA
 36.38|3.9014:Bouira,Bouira,DZ
 36.0667|4.7667:Bordj Bou-Arreridj,Bordj Bou-Arreridj,DZ
@@ -1556,17 +1667,7 @@
 6.6667|-1.6167:Kumasi,Ashanti Region,GH
 5.6667|0.0:Tema,Greater Accra Region,GH
 7.9773|-1.2106:,,GH
-6.455|3.3841:,Lagos,NG
-10.5|10.0:,Bauchi,NG
-9.0667|7.4833:,Abuja,NG
-8.0|4.0:,Oyo,NG
-6.5|7.5:,Enugu,NG
-6.5|6.0:,Edo,NG
 7.3333|8.75:,Benue,NG
-10.5167|7.4333:,Kaduna,NG
-7.5|4.5:,Osun,NG
-7.0|3.5833:,Ogun,NG
-7.6667|5.25:,Ekiti,NG
 13.2768|-14.2949:Numuyel,,GM
 35.3|-1.1333:Ain Temouchent,Ain Temouchent,DZ
 36.2167|1.3333:Chlef,Chlef,DZ
@@ -1598,36 +1699,24 @@
 12.6167|3.55:Dioundiou,,NE
 35.3667|1.3166:Tiaret,Tiaret,DZ
 10.3158|9.8442:Bauchi,Bauchi,NG
-4.75|6.8333:,Rivers,NG
 8.5414|39.2689:Adama,Oromia,ET
 31.6167|-2.2167:Bechar,Bechar,DZ
 35.4|8.1167:Tebessa,Tebessa,DZ
 36.4503|6.2644:Mila,Mila,DZ
 -2.0001|29.926:,,RW
-5.0|7.8333:,Akwa Ibom,NG
-7.1667|5.0833:,Ondo,NG
-8.5|5.0:,Kwara,NG
 9.6|41.8667:Dire Dawa,Dire Dawa,ET
 8.8|38.9:Dukem,Oromia,ET
 -17.9333|25.8333:Victoria Falls,Matabeleland North,ZW
 -17.85|31.05:Harare,Harare,ZW
 9.6645|2.3403:,,BJ
-5.712|5.9465:,Delta,NG
-12.9913|7.6:,Katsina,NG
 6.229|6.9399:,Anambra,NG
 9.9378|5.5909:,Niger,NG
-12.0001|8.5167:,Kano,NG
 7.9159|36.8262:Jimma,Oromia,ET
 -3.5405|39.8782:,Nairobi, Mombasa or Kilifi,KE
 -4.0401|39.7127:,Mombasa, Nairobi or Nyandarua,KE
 -1.1952|36.9331:,Nairobi, Mombasa or Homabay,KE
-8.9102|38.6194:Sebeta,Oromia,ET
 10.4518|40.7305:Gewane,Afar,ET
-12.2409|9.5663:,Jigawa,NG
-11.8905|13.1477:,Borno,NG
-10.2932|11.1675:,Gombe,NG
 5.4567|7.5245:,Abia,NG
-13.0609|5.239:,Sokoto,NG
 35.106|135.7298:Kyoto,Kyoto Prefecture,JP
 14.55|121.03:Makati,Metro Manila,PH
 14.575|121.0833:Pasig,Metro Manila,PH
@@ -2489,10 +2578,10 @@
 -0.8858|-79.4873:buena fe,los rios,EC
 -1.6681|-79.6727:baba,los rios,EC
 -1.0547|-80.4525:portoviejo,manabi,EC
--1.4882|-78.0031:pastaza,pastaza,EC
 -54.0|-70.0:,Tierra del Fuego,AR
--0.9583|-78.6966:pujili,cotopaxi,EC
+-1.4882|-78.0031:pastaza,pastaza,EC
 -23.75|-65.5:,Jujuy,AR
+-0.9583|-78.6966:pujili,cotopaxi,EC
 -48.62|-70.01:,Santa Cruz,AR
 -32.8903|-68.8472:,Mendoza,AR
 -33.3|-66.35:,San Luis,AR
@@ -2507,21 +2596,21 @@
 -0.9963|-77.8136:tena,napo,EC
 0.5651|-77.7725:montufar,carchi,EC
 -1.9159|-80.013:nobol,guayas,EC
--2.189|-79.1831:general antonio elizalde,guayas,EC
 -28.66|-57.63:,Corrientes,AR
 -24.7833|-65.4167:,Salta,AR
+-2.189|-79.1831:general antonio elizalde,guayas,EC
 -40.8|-63.0:,Rio Negro,AR
+-33.3|-66.3333:San Luis,San Luis,AR
 0.0727|-76.7337:lago agrio,Sucumbios,EC
 -0.1883|-76.6422:shushufindi,Sucumbios,EC
 -0.4617|-76.9931:orellana,orellana,EC
--33.3|-66.3333:San Luis,San Luis,AR
 -0.9412|-79.2316:la mana,cotopaxi,EC
 -1.6075|-78.6314:guano,chimborazo,EC
+-34.7167|-58.6333:La Matanza, Buenos Aires,,AR
 -0.956|-80.6385:jaramijo,manabi,EC
 -1.3661|-80.3881:24 de mayo,manabi,EC
 -0.9237|-80.4508:rocafuerte,manabi,EC
 -2.9103|-77.791:tiwintza,morona santiago,EC
--34.7167|-58.6333:La Matanza, Buenos Aires,,AR
 0.0548|-78.2704:pedro moncayo,pichincha,EC
 0.0425|-78.1459:cayambe,pichincha,EC
 -0.6988|-78.8862:sigchos,cotopaxi,EC
@@ -2550,12 +2639,12 @@
 -17.9667|-67.1167:Oruro,Oruro,BO
 -17.4044|-63.7325:San Carlos,Santa Cruz,BO
 -17.8533|-63.3086:Porongo,Santa Cruz,BO
--17.3422|-63.2558:Montero,Santa Cruz,BO
 -4.3216|-79.553:Calvas,Loja,EC
 -3.9865|-79.3569:Catamayo,Loja,EC
 -4.3848|-79.9429:Macara,Loja,EC
--1.1841|-79.5061:Mocache,Los Rios,EC
+-17.3422|-63.2558:Montero,Santa Cruz,BO
 -28.8882|-62.266:Bandera,Santiago del Estero,AR
+-1.1841|-79.5061:Mocache,Los Rios,EC
 -1.0452|-80.6588:Montecristi,Manabi,EC
 -1.2069|-80.3686:Santa Ana,Manabi,EC
 -1.2783|-80.4243:Sucre,Manabi,EC
@@ -2567,8 +2656,8 @@
 -26.94|-65.34:,Tucuman,AR
 -3.8291|-78.7618:Yantzaza,Zamora Chinchipe,EC
 -0.8292|-91.1353:Isabela,Galapagos,EC
--18.3333|-59.75:Robore,Santa Cruz,BO
 -0.3631|-75.6208:Cuyabeno,Sucumbios,EC
+-18.3333|-59.75:Robore,Santa Cruz,BO
 -1.0422|-78.5907:salcedo,cotopaxi,EC
 -0.8226|-78.6682:saquisili,cotopaxi,EC
 -3.2369|-79.8185:el guabo,el oro,EC
@@ -2589,8 +2678,8 @@
 1.2361|-78.7901:san lorenzo,esmeraldas,EC
 -28.9872|-51.9993:Anta Gorda,Rio Grande do Sul,BR
 -20.8166|-49.4524:Sao Jose do Rio Preto,Sao Paulo,BR
--31.3285|-54.0923:Bage,Rio Grande do Sul,BR
 -0.9268|-80.2065:junin,manabi,EC
+-31.3285|-54.0923:Bage,Rio Grande do Sul,BR
 -2.7679|-78.7014:guachapala,azuay,EC
 -2.1317|-78.8578:alausi,chimborazo,EC
 -1.6257|-79.9229:palestina,guayas,EC
@@ -2683,14 +2772,14 @@
 18.75|-99.0667:,Morelos,MX
 28.8167|-106.4333:,Chihuahua,MX
 19.1667|-101.9:,Michoacan,MX
+18.8333|-90.4:,Campeche,MX
 -2.5635|-44.2449:Sao Luiz,Maranhao,BR
 -15.5987|-56.0991:Cuiaba,Mato Grosso,BR
-18.8333|-90.4:,Campeche,MX
 -15.6458|-56.1322:Varzea Grande,Mato Grosso,BR
 16.9|-96.4167:,Oaxaca,MX
 19.4333|-98.1667:,Tlaxcala,MX
--24.0852|-54.2568:Guaira,Parana,BR
 19.1667|-103.8833:,Colima,MX
+-24.0852|-54.2568:Guaira,Parana,BR
 -7.9995|-34.8711:Olinda,Pernambuco,BR
 -30.1085|-51.3172:Dom Pedrito,Rio Grande do Sul,BR
 -29.9985|-51.3092:Eldorado do Sul,Rio Grande do Sul,BR
@@ -2698,8 +2787,8 @@
 -29.5019|-51.9658:Estrela,Rio Grande do Sul,BR
 -29.2436|-51.5379:Garibaldi,Rio Grande do Sul,BR
 -29.5852|-51.1582:Ivoti,Rio Grande do Sul,BR
--29.4492|-29.4492:Lajeado,Rio Grande do Sul,BR
 14.9142|-92.2592:,Chipas,MX
+-29.4492|-29.4492:Lajeado,Rio Grande do Sul,BR
 -28.4264|-52.1981:Marau,Rio Grande do Sul,BR
 -10.8778|-61.9278:Ji Parana,Rondonia,BR
 -28.6775|-49.3697:Criciuma,Santa Catarina,BR
@@ -2763,10 +2852,10 @@
 -13.8008|-40.1039:Jequie,Bahia,BR
 -14.2025|-41.6701:Brumado,Bahia,BR
 -7.157|-38.1336:Igaracy,Paraiba,BR
+-34.6085|-58.3734:,Ciudad de Buenos Aires,AR
 -19.9417|-44.3324:Betim,Minas Gerais,BR
 -19.7481|-45.2992:Bom Despacho,Minas Gerais,BR
 -19.9987|-45.6321:Lagoa de Prata,Minas Gerais,BR
--34.6085|-58.3734:,Ciudad de Buenos Aires,AR
 -19.5536|-42.6752:Timoteo,Minas Gerais,BR
 -7.387|-38.7738:Mauriti,Ceara,BR
 -20.8596|-41.1303:Cachoeiro do Itapemirim,Espirito Santo,BR
@@ -2853,10 +2942,10 @@
 -36.8333|-73.05:,Biobio,CL
 -38.9|-72.6667:,Araucania,CL
 -41.4717|-72.9367:,Los Lagos,CL
+-36.6167|-64.2833:,La Pampa,AR
 -18.475|-70.3144:,Arica y Parinacota,CL
 -29.9531|-71.3433:,Coquimbo,CL
 -33.05|-71.6167:,Valparaiso,CL
--36.6167|-64.2833:,La Pampa,AR
 -34.1672|-70.7269:,OHiggins,CL
 -36.6167|-71.95:,Nuble,CL
 -23.65|-70.4:,Antofagasta,CL
@@ -3024,81 +3113,29 @@
 39.5672|16.322:Cosenza,Calabria,IT
 46.0895|8.3443:Verbano-Cusio-Ossola,Piemonte,IT
 43.7|12.6726:Pesaro e Urbino,Marche,IT
-45.7984|9.7901:Bergamo,Lombardia,IT
-45.4185|11.037:Verona,Veneto,IT
-45.6755|11.4918:Vicenza,Veneto,IT
 44.8304|8.6639:Alessandria,Piemonte,IT
-42.1016|14.3826:Chieti,Abruzzo,IT
-42.1061|13.6026:L'Aquila,Abruzzo,IT
-42.333|13.9845:Pescara,Abruzzo,IT
-42.6461|13.7265:Teramo,Abruzzo,IT
-40.4709|16.4461:Matera,Basilicata,IT
 45.5836|8.096:Biella,Piemonte,IT
-40.5192|15.8903:Potenza,Basilicata,IT
-46.4953|11.3535:Bolzano,P.A. Bolzano,IT
 44.4789|7.5935:Cuneo,Piemonte,IT
-38.8977|16.4911:Catanzaro,Calabria,IT
-39.1782|16.9465:Crotone,Calabria,IT
-38.2401|16.0324:Reggio di Calabria,Calabria,IT
-38.6259|16.162:Vibo Valentia,Calabria,IT
-40.9778|15.08:Avellino,Campania,IT
-41.241|14.7521:Benevento,Campania,IT
 45.565|8.555:Novara,Piemonte,IT
-41.2187|14.1613:Caserta,Campania,IT
-40.8442|14.3414:Napoli,Campania,IT
-44.4327|11.3491:Bologna,Emilia-Romagna,IT
-44.7898|11.8483:Ferrara,Emilia-Romagna,IT
-44.037|12.0376:Forlì-Cesena,Emilia-Romagna,IT
 45.5281|8.2098:Vercelli,Piemonte,IT
-44.539|10.894:Modena,Emilia-Romagna,IT
-44.6717|10.0489:Parma,Emilia-Romagna,IT
-44.8687|9.6216:Piacenza,Emilia-Romagna,IT
 40.9321|16.7519:Bari,Puglia,IT
-45.7051|10.3132:Brescia,Lombardia,IT
-44.3726|11.9968:Ravenna,Emilia-Romagna,IT
-44.6078|10.5529:Reggio nell'Emilia,Emilia-Romagna,IT
 41.1738|16.1718:Barletta-Andria-Trani,Puglia,IT
-43.9788|12.5558:Rimini,Emilia-Romagna,IT
-45.9649|12.6445:Pordenone,Friuli Venezia Giulia,IT
-45.6576|13.7727:Trieste,Friuli Venezia Giulia,IT
-41.6166|13.5363:Frosinone,Lazio,IT
 40.6102|17.6914:Brindisi,Puglia,IT
-41.4286|13.1459:Latina,Lazio,IT
-42.3781|12.9613:Rieti,Lazio,IT
-41.9245|12.5708:Roma,Lazio,IT
 41.5397|15.5614:Foggia,Puglia,IT
-42.4255|11.9954:Viterbo,Lazio,IT
-44.4679|9.1227:Genova,Liguria,IT
 40.1738|18.1772:Lecce,Puglia,IT
-43.9467|7.8088:Imperia,Liguria,IT
-44.283|8.2918:Savona,Liguria,IT
 40.5429|17.2021:Taranto,Puglia,IT
 39.3166|9.1555:Cagliari,Sardegna,IT
 40.2358|9.2925:Nuoro,Sardegna,IT
-45.9289|9.1538:Como,Lombardia,IT
 40.6286|8.6998:Sassari,Sardegna,IT
-45.9044|9.3878:Lecco,Lombardia,IT
 37.3109|13.5765:Agrigento,Sicilia,IT
-45.2311|9.5788:Lodi,Lombardia,IT
-45.1654|10.7924:Mantova,Lombardia,IT
 37.5114|15.0675:Catania,Sicilia,IT
-45.4659|9.1211:Milano,Lombardia,IT
 37.565|14.2704:Enna,Sicilia,IT
 38.1784|15.5531:Messina,Sicilia,IT
 38.1221|13.3611:Palermo,Sicilia,IT
-45.1935|9.1743:Monza e della Brianza,Lombardia,IT
 36.9269|14.7254:Ragusa,Sicilia,IT
-45.1105|9.0373:Pavia,Lombardia,IT
 37.078|15.2813:Siracusa,Sicilia,IT
-46.2996|9.9135:Sondrio,Lombardia,IT
-45.8053|8.7761:Varese,Lombardia,IT
-43.5047|13.156:Ancona,Marche,IT
 38.0187|12.5146:Trapani,Sicilia,IT
-42.889|13.5556:Ascoli Piceno,Marche,IT
-43.1904|13.24:Macerata,Marche,IT
 43.5355|11.8578:Arezzo,Toscana,IT
-41.7037|14.7773:Campobasso,Molise,IT
-44.879|8.187:Asti,Piemonte,IT
 43.7824|11.255:Firenze,Toscana,IT
 42.788|11.242:Grosseto,Toscana,IT
 43.1531|10.4795:Livorno,Toscana,IT
@@ -3106,78 +3143,130 @@
 44.2561|10.0118:Massa Carrara,Toscana,IT
 43.5039|10.6677:Pisa,Toscana,IT
 43.969|10.8499:Pistoia,Toscana,IT
-39.9986|8.7051:Oristano,Sardegna,IT
-39.4286|8.9453:Sud Sardegna,Sardegna,IT
-37.49|14.0632:Caltanissetta,Sicilia,IT
 43.9521|11.0939:Prato,Toscana,IT
 43.1929|11.4568:Siena,Toscana,IT
 46.3179|10.7997:Trento,P.A. Trento,IT
 43.0691|12.5315:Perugia,Umbria,IT
 42.6661|12.3672:Terni,Umbria,IT
+45.7328|7.3937:Aosta,Valle d'Aosta,IT
 46.3165|12.1706:Belluno,Veneto,IT
 45.4094|11.8717:Padova,Veneto,IT
-45.7328|7.3937:Aosta,Valle d'Aosta,IT
-45.0134|11.8992:Rovigo,Veneto,IT
 45.796|12.2184:Treviso,Veneto,IT
 45.5273|12.4794:Venezia,Veneto,IT
-45.9415|13.6218:Gorizia,Friuli Venezia Giulia,IT
+45.4185|11.037:Verona,Veneto,IT
+45.6755|11.4918:Vicenza,Veneto,IT
+42.1016|14.3826:Chieti,Abruzzo,IT
+42.1061|13.6026:L'Aquila,Abruzzo,IT
+42.333|13.9845:Pescara,Abruzzo,IT
+42.6461|13.7265:Teramo,Abruzzo,IT
+40.5192|15.8903:Potenza,Basilicata,IT
+46.4953|11.3535:Bolzano,P.A. Bolzano,IT
+40.9778|15.08:Avellino,Campania,IT
+41.2187|14.1613:Caserta,Campania,IT
+40.8442|14.3414:Napoli,Campania,IT
+44.4327|11.3491:Bologna,Emilia-Romagna,IT
+44.7898|11.8483:Ferrara,Emilia-Romagna,IT
+44.037|12.0376:Forlì-Cesena,Emilia-Romagna,IT
+44.539|10.894:Modena,Emilia-Romagna,IT
+44.6717|10.0489:Parma,Emilia-Romagna,IT
+44.8687|9.6216:Piacenza,Emilia-Romagna,IT
+44.3726|11.9968:Ravenna,Emilia-Romagna,IT
+44.6078|10.5529:Reggio nell'Emilia,Emilia-Romagna,IT
+43.9788|12.5558:Rimini,Emilia-Romagna,IT
+45.9649|12.6445:Pordenone,Friuli Venezia Giulia,IT
+45.6576|13.7727:Trieste,Friuli Venezia Giulia,IT
 46.0645|13.2381:Udine,Friuli Venezia Giulia,IT
+41.6166|13.5363:Frosinone,Lazio,IT
+42.3781|12.9613:Rieti,Lazio,IT
+41.9245|12.5708:Roma,Lazio,IT
+42.4255|11.9954:Viterbo,Lazio,IT
+45.7984|9.7901:Bergamo,Lombardia,IT
+45.7051|10.3132:Brescia,Lombardia,IT
+45.9289|9.1538:Como,Lombardia,IT
+45.9044|9.3878:Lecco,Lombardia,IT
+45.2311|9.5788:Lodi,Lombardia,IT
+45.1654|10.7924:Mantova,Lombardia,IT
+45.4659|9.1211:Milano,Lombardia,IT
+45.1935|9.1743:Monza e della Brianza,Lombardia,IT
+45.1105|9.0373:Pavia,Lombardia,IT
+46.2996|9.9135:Sondrio,Lombardia,IT
+45.8053|8.7761:Varese,Lombardia,IT
+43.5047|13.156:Ancona,Marche,IT
+42.889|13.5556:Ascoli Piceno,Marche,IT
+43.1904|13.24:Macerata,Marche,IT
+41.7037|14.7773:Campobasso,Molise,IT
+39.4286|8.9453:Sud Sardegna,Sardegna,IT
+37.49|14.0632:Caltanissetta,Sicilia,IT
+38.8977|16.4911:Catanzaro,Calabria,IT
+39.1782|16.9465:Crotone,Calabria,IT
+38.2401|16.0324:Reggio di Calabria,Calabria,IT
+45.9415|13.6218:Gorizia,Friuli Venezia Giulia,IT
+44.4679|9.1227:Genova,Liguria,IT
+44.283|8.2918:Savona,Liguria,IT
+44.879|8.187:Asti,Piemonte,IT
+45.0134|11.8992:Rovigo,Veneto,IT
+40.4709|16.4461:Matera,Basilicata,IT
+38.6259|16.162:Vibo Valentia,Calabria,IT
+43.9467|7.8088:Imperia,Liguria,IT
 43.1003|13.5776:Fermo,Marche,IT
 41.6507|14.2507:Isernia,Molise,IT
+39.9986|8.7051:Oristano,Sardegna,IT
+41.241|14.7521:Benevento,Campania,IT
+41.4286|13.1459:Latina,Lazio,IT
 63.8631|54.8313:Komi Republic,North Western,RU
 57.1931|29.2945:Pskov Oblast,North Western,RU
 61.9895|96.8054:Crimea,South,RU
 45.2646|39.4684:Krasnodar Krai,South,RU
-47.7458|41.3018:Rostov Oblast,South,RU
 58.8232|56.5872:Perm Krai,Volga,RU
 51.7634|54.6188:Orenburg Oblast,Volga,RU
-53.1412|44.094:Penza Oblast,Volga,RU
 62.0397|129.7422:Yakutia,Far Eastern,RU
-60.0|100.0:Khakassia,Siberia,RU
 67.4744|96.0421:Krasnoyarsk Krai,Siberia,RU
-55.3583|86.0675:Kemerovo Oblast,Siberia,RU
-54.9778|83.0456:Novosibirsk Oblast,Siberia,RU
-56.4762|84.9755:Tomsk Oblast,Siberia,RU
 53.5459|109.5773:Buryatia,Far Eastern,RU
-57.1057|41.483:Ivanovo Oblast,Central,RU
-57.8992|38.8389:Yaroslavl Oblast,Central,RU
 49.6348|44.1439:Volgograd Oblast,South,RU
 44.6053|33.5273:Sevastopol,South,RU
-43.0428|46.8726:Dagestan,North Caucasian,RU
 54.1126|42.7103:Mordovia,Volga,RU
-58.5653|41.5671:Kostroma Oblast,Central,RU
-54.1166|33.3023:Smolensk Oblast,Central,RU
-44.5776|40.0271:Adygea,South,RU
-51.8369|46.7539:Saratov Oblast,Volga,RU
+57.1057|41.483:Ivanovo Oblast,Central,RU
+54.9778|83.0456:Novosibirsk Oblast,Siberia,RU
 49.9448|143.6201:Sakhalin Oblast,Far Eastern,RU
-50.7107|37.7533:Belgorod Oblast,Central,RU
 67.8443|35.0884:Murmansk Oblast,North Western,RU
-56.9634|66.9483:Tyumen Oblast,Ural,RU
-52.2682|104.2901:Irkutsk Oblast,Siberia,RU
-53.4089|127.7249:Amur Oblast,Far Eastern,RU
-57.0022|33.9853:Tver Oblast,Central,RU
+53.1412|44.094:Penza Oblast,Volga,RU
+56.4762|84.9755:Omsk Oblast,Siberia,RU
+50.7107|37.7533:Belgorod Oblast,Central,RU
 56.2054|42.1314:Vladimir Oblast,Central,RU
 59.9566|40.6037:Vologda Oblast,North Western,RU
-46.4348|45.3635:Kalmykia,South,RU
+44.5776|40.0271:Adygea,South,RU
+43.0428|46.8726:Dagestan,North Caucasian,RU
 56.3358|46.5413:Mari El,Volga,RU
-51.5328|81.2074:Altai Krai,Siberia,RU
+51.8369|46.7539:Saratov Oblast,Volga,RU
+58.5653|41.5671:Kostroma Oblast,Central,RU
 47.593|47.4501:Astrakhan Oblast,South,RU
-62.7016|153.9993:Magadan Oblast,Far Eastern,RU
+47.7458|41.3018:Rostov Oblast,South,RU
+56.9634|66.9483:Tyumen Oblast,Ural,RU
 51.7621|36.1854:Kursk Oblast,Central,RU
 52.6417|41.4216:Tambov Oblast,Central,RU
 43.0925|44.2629:North Ossetia-Alania,North Caucasian,RU
 66.1219|76.6739:Yamalo-Nenets AO,Ural,RU
-43.1696|44.8041:Ingushetia,North Caucasian,RU
+52.2682|104.2901:Irkutsk Oblast,Siberia,RU
+46.4348|45.3635:Kalmykia,South,RU
 50.2798|127.5095:Jewish AO,Far Eastern,RU
+57.8992|38.8389:Yaroslavl Oblast,Central,RU
+51.5328|81.2074:Altai Krai,Siberia,RU
+53.4089|127.7249:Amur Oblast,Far Eastern,RU
 61.5005|169.7585:Kamchatka Krai,Far Eastern,RU
+57.0022|33.9853:Tver Oblast,Central,RU
 61.7764|34.3099:Republic of Karelia,North Western,RU
 55.5596|46.9284:Chuvashia,Volga,RU
-53.9793|47.7762:Ulyanovsk Oblast,Volga,RU
+60.0|100.0:Khakassia,Siberia,RU
+55.3583|86.0675:Kemerovo Oblast,Siberia,RU
+43.1696|44.8041:Ingushetia,North Caucasian,RU
 43.7712|41.7551:Karachay-Cherkessia,North Caucasian,RU
+53.9793|47.7762:Ulyanovsk Oblast,Volga,RU
+54.1166|33.3023:Smolensk Oblast,Central,RU
 53.0929|116.9677:Zabaykalsky Krai,Far Eastern,RU
-67.8768|54.95:Nenets AO,North Western,RU
+62.7016|153.9993:Magadan Oblast,Far Eastern,RU
+50.7335|87.0149:Altai Republic,Siberia,RU
 66.427|170.6854:Chukotka AO,Far Eastern,RU
-50.7335|87.0149:Altai Republic,Siberia,RU32.5395|-86.6441:Autauga,Alabama,US
+67.8768|54.95:Nenets AO,North Western,RU32.5395|-86.6441:Autauga,Alabama,US
 30.7277|-87.7221:Baldwin,Alabama,US
 31.8683|-85.3871:Barbour,Alabama,US
 32.9964|-87.1251:Bibb,Alabama,US
