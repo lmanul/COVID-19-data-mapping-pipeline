@@ -352,6 +352,10 @@ function handleFlyTo(lat, lon, zoom, item) {
 
 function init() {
   dataProvider = new DataProvider();
+  const hash = window.location.href.split('#')[1] || '';
+  if (hash == 'autodrive') {
+    document.body.classList.add('autodrive');
+  }
 
   mapboxgl.accessToken = MAPBOX_TOKEN;
   map = new mapboxgl.Map({
