@@ -107,7 +107,8 @@ DataProvider.prototype.fetchLatestCounts = function() {
   return fetch(this.baseUrl_ + 'latestCounts.json?nocache=' + timestamp)
     .then(function(response) { return response.json(); })
     .then(function(jsonData) {
-      document.getElementById('total-cases').innerText = jsonData[0]['caseCount'];
+      const totalCases = parseInt(jsonData[0]['caseCount']);
+      document.getElementById('total-cases').innerText = totalCases.toLocaleString();
       document.getElementById('last-updated-date').innerText = jsonData[0]['date'];
     });
 };
