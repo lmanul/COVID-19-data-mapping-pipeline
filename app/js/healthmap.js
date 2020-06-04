@@ -11,11 +11,6 @@ const COLOR_MAP = [
   ['#edf91c', '> 2000'],
   ['cornflowerblue', 'New'],
 ];
-const MAPBOX_TOKEN = 'pk.eyJ1IjoiaGVhbHRobWFwIiwiYSI6ImNrOGl1NGNldTAyYXYzZnBqcnBmN3RjanAifQ.H377pe4LPPcymeZkUBiBtg';
-
-// This is a single threshold for now, but is meant to become a multi-stage
-// logic.
-const ZOOM_THRESHOLD = 2;
 
 // Runtime constants
 const timestamp = (new Date()).getTime();
@@ -42,37 +37,6 @@ let atomicFeaturesByDay = {};
 
 let timeControl;
 
-function onMapZoomChanged() {
-  showDataAtDate(currentIsoDate);
-}
-
-function showDataAtDate(isodate) {
-  if (currentIsoDate != isodate) {
-    currentIsoDate = isodate;
-  }
-  const zoom = map.getZoom();
-  let featuresToShow = [];
-  // Show per-country data for low zoom levels, but only for the most recent
-  // date.
-  if (zoom <= ZOOM_THRESHOLD && currentIsoDate == dates[dates.length - 1]) {
-    const data = dataProvider.getLatestDataPerCountry();
-    for (let centroid_geoid in data) {
-      let countryData = data[centroid_geoid];
-      let country = countryData[0];
-      let feature = formatFeatureForMap({
-        'properties': {
-          'geoid': centroid_geoid,
-          'total': countryData[1],
-          'new': 0
-        }
-      });
-      featuresToShow.push(feature);
-    }
-  } else {
-    featuresToShow = atomicFeaturesByDay[isodate];
-  }
-  map.getSource('counts').setData(formatFeatureSetForMap(featuresToShow));
-}
 
 function setTimeControlLabel(date) {
   document.getElementById('date').innerText = dates[date];
@@ -85,29 +49,6 @@ function zfill(n, width) {
 }
 
 function onAllDailySlicesFetched() {
-}
-
-// Takes an array of features, and bundles them in a way that the map API
-// can ingest.
-function formatFeatureSetForMap(features) {
-  return {'type': 'FeatureCollection', 'features': features};
-}
-
-// Tweaks the given object to make it ingestable as a feature by the map API.
-function formatFeatureForMap(feature) {
-  feature.type = 'Feature';
-  if (!feature['properties']) {
-    // This feature is missing key data, add a placeholder.
-    feature['properties'] = {'geoid': '0|0'};
-  }
-  // If the 'new' property is absent, assume 0.
-  if (isNaN(feature['properties']['new'])) {
-    feature['properties']['new'] = 0;
-  }
-  let coords = feature['properties']['geoid'].split('|');
-  // Flip latitude and longitude.
-  feature['geometry'] = {'type': 'Point', 'coordinates': [coords[1], coords[0]]};
-  return feature;
 }
 
 // Build list of locations with counts
@@ -190,40 +131,6 @@ function showLegend() {
     item.appendChild(label);
     list.appendChild(item);
   }
-}
-
-function addMapLayer(map, id, featureProperty, circleColor) {
-  map.addLayer({
-    'id': id,
-    'type': 'circle',
-    'source': 'counts',
-    'paint': {
-      'circle-radius': [
-        'case', [
-          '<',
-          0, [
-            'number', [
-              'get',
-              featureProperty
-            ]
-          ]
-        ], [
-          '*', [
-            'log10', [
-              'sqrt', [
-                'get',
-                featureProperty
-              ]
-            ]
-          ],
-          10
-        ],
-        0
-      ],
-      'circle-color': circleColor,
-      'circle-opacity': 0.6,
-    }
-  });
 }
 
 function sameLocation(geoid_a, geoid_b) {
@@ -360,67 +267,24 @@ function init() {
     document.body.classList.add('autodrive');
   }
 
-  mapboxgl.accessToken = MAPBOX_TOKEN;
-  map = new mapboxgl.Map({
-    'container': 'map',
-    'style': 'mapbox://styles/healthmap/ck7o47dgs1tmb1ilh5b1ro1vn',
-    'center': [10, 0],
-    'zoom': 1,
-  }).addControl(new mapboxgl.NavigationControl());
-  popup = new mapboxgl.Popup({
-    'closeButton': false,
-    'closeOnClick': false
-  });
-
+  map = new Map();
   timeControl = document.getElementById('slider');
-  timeControl.addEventListener('input', function() {
-    setTimeControlLabel(timeControl.value);
-    showDataAtDate(dates[timeControl.value]);
-  });
 
-  map.on('load', function () {
-    map.addSource('counts', {
-      'type': 'geojson',
-      'data': formatFeatureSetForMap([])
-    });
-    let circleColorForTotals = ['step', ['get', 'total']];
-    // Don't use the last color here (for new cases).
-    for (let i = 0; i < COLOR_MAP.length - 1; i++) {
-      let color = COLOR_MAP[i];
-      circleColorForTotals.push(color[0]);
-      if (color.length > 2) {
-        circleColorForTotals.push(color[2]);
-      }
-    }
-
-    addMapLayer(map, 'totals', 'total', circleColorForTotals);
-    addMapLayer(map, 'daily', 'new', 'cornflowerblue');
-
-    map.on('mouseenter', 'totals', function (e) {
-      // Change the cursor style as a UI indicator.
-      map.getCanvas().style.cursor = 'pointer';
-
-      showPopupForEvent(e);
-    });
-
-    map.on('zoom', onMapZoomChanged);
-
-    map.on('mouseleave', 'totals', function () {
-      map.getCanvas().style.cursor = '';
-      popup.remove();
-    });
-
-    dataProvider.fetchInitialData(function() {
-      // Once the initial data is here, fetch the daily slices.
+  dataProvider.fetchInitialData(function() {
+    // Once the initial data is here, fetch the daily slices. Start with the
+    // newest.
+    dataProvider.fetchLatestDailySlice(function() {
+      // This point the 'dates' array only contains the latest date.
+      // Show the latest data when we have that before fetching older data.
+      map.showDataAtDate(dates[0]);
       dataProvider.fetchDailySlices(function() {
         dates = dates.sort();
       });
     });
-    // Get the basic data about locations before we can start getting daily
-    // slices.
-
-    showLegend();
   });
+  // Get the basic data about locations before we can start getting daily
+  // slices.
+
   document.getElementById('spread').
       addEventListener('click', toggleMapAnimation);
   document.getElementById('playpause').setAttribute('src', 'img/play.svg');
